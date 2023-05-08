@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>CSHDD</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Antlr4.Runtime.Standard" Version="4.10.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="HDDMin">
+        <HintPath>..\..\HDDMin\HDDMin\bin\Debug\net6.0\HDDMin.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
