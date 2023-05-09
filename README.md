@@ -1,5 +1,5 @@
 # CSHDD
-Szakdolgozat példaprogram
+# Szakdolgozat példaprogram
 
 Használat:
 CSHDD.exe [input] [testerscript] [-g #] [-nc]
