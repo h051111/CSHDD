@@ -1,1 +1,0 @@
-class A { constructor ( ) {           ; String ( keys [ 0 ] === "length" ) ; } f ( ) { return 10 ; } super ( ) {   return   } } class B extends A { constructor ( ) {                           } } var b = new B ; String ( b . f === 8 ) ; String ( b . a === 10 ) ;  

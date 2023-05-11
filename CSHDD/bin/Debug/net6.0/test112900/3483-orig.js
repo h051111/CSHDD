@@ -1,1 +1,0 @@
-"(function (" ; for ( var i = 0 ; i < 254 ; i ++ ) src += + + ", " ; src ; ; try { ( src ) ; } catch ( e ) { (  ) ; } var src = "(function () {" ; for ( var i = 0 ; i < 400 ; i ++ ) src += "var a" + i + " = 5; " ; src += 'Setting `o.bar` to' ; eval ( src ) ; 
