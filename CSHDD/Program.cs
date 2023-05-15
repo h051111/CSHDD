@@ -16,6 +16,8 @@ String pathToTester = args[1];
 inputPath = Path.GetFullPath(inputPath);
 pathToTester = Path.GetFullPath(pathToTester);
 
+string test_code = Path.GetFileName(inputPath).Split('-')[0];
+
 int gIndex = args.ToList().IndexOf("-g");
 int cIndex = args.ToList().IndexOf("-nc");
 int granularity = 2;
@@ -46,10 +48,12 @@ hdd.SetComplementFirst(complementFirst);
 HDDTreeNode root = hdd.Reduce(tree, pathToTester, Path.GetFileName(inputPath), stream);
 String newSource = TreeToSource(root);
 
-Console.WriteLine("---------------------------------------");
-Console.WriteLine("REDUCED TO:");
-Console.Write(newSource);
-Console.WriteLine(" WITH {0} DD STEPS AND {1} HDD STEPS", hdd.GetDdStepCounter(), hdd.GetHddStepCounter());
-Console.WriteLine("---------------------------------------");
+// Console.WriteLine("---------------------------------------");
+// Console.WriteLine("REDUCED TO:");
+// Console.Write(newSource);
+// Console.WriteLine(" WITH {0} DD STEPS AND {1} HDD STEPS", hdd.GetDdStepCounter(), hdd.GetHddStepCounter());
+// Console.WriteLine("---------------------------------------");
+// Console.WriteLine($"Test, Granularity, DD Steps, HDD Steps, Output Size");
+Console.Error.WriteLine($"{test_code}, {granularity}, {hdd.GetDdStepCounter()}, {hdd.GetHddStepCounter()}, {newSource.Count(c => !Char.IsWhiteSpace(c))}");
 
 //List<String> buildConfig

@@ -12,8 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Reference Include="HDDMin">
-        <HintPath>..\..\HDDMin\HDDMin\bin\Debug\net6.0\HDDMin.dll</HintPath>
-      </Reference>
+      <ProjectReference Include="..\..\HDDMin\HDDMin\HDDMin.csproj" />
     </ItemGroup>
 </Project>
